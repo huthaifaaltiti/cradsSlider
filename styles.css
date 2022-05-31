@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+
+  position: relative;
+}
+
+:root {
+  --color-primary: #fb8700;
+  --color-white: #fff;
+  --color-text: #333;
+}
+
+/* general */
+
+.hidden {
+  display: none;
+}
+
+/* main content */
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-container {
+  width: 60rem;
+  height: 50rem;
+
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.svg-icon {
+  width: 4rem;
+  height: 4rem;
+
+  fill: var(--color-text);
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 10rem;
+}
+
+.svg-left{
+  left: 4rem;
+}
+
+.svg-right{
+  right: 4rem;
+}
+
+.slider-circles-controllers{
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 1rem;
+}
+
+.circle{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+
+  background-color:#fb8600d7;
+
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(1.5);
+  background-color: var(--color-primary);
+}
+
+.slider{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  width: 300%;
+  transition: all 0.5s linear;
+}
+
+
+.testimonial-card {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+
+  border-radius: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.testimonials-img-container {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.testimonials-img {
+  width: 100%;
+  height: 100%;
+}
+
+.para-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+
+  margin-top: 1rem;
+
+  color: var(--color-text);
+
+  position: relative;
+}
+
+.para-text::before {
+  content: "“";
+  font-size: 8rem;
+
+  color: var(--color-primary);
+
+  position: absolute;
+  left: 50%;
+  top: -6rem;
+  transform: translateX(-50%);
+}
+
+.card-bio{
+  text-align: center;
+}
+
+.card-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  margin-top: 3rem;
+}
+
+.card-bio {
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  margin-top: 0.5rem;
+}
+
+/* for decorations */
+
+.decoration-container {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.decoration {
+  width: 30rem;
+  height: 50rem;
+
+  background-color: #333;
+  opacity: 0.3;
+
+  transform: rotate(140deg) scale(5);
+
+  position: absolute;
+}
+
+.decoration--left {
+  left: -80rem;
+  bottom: 0;
+}
+
+.decoration--right {
+  right: -80rem;
+  top: 0;
+}
